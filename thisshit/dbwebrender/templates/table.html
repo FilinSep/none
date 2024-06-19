@@ -1,0 +1,14 @@
+<table border="1", width="300">
+    <tr>
+        {% for column in info %}
+            <td><b>{{column}}<b/></td>
+        {% endfor %}
+    </tr>
+    {% for values in all %}
+        <tr>
+            {% for value in values %}
+                <td>{{value}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}   
+</table>
